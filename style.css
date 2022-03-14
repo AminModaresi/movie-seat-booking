@@ -1,0 +1,43 @@
+body{
+    background-color: #242333;
+    color: #fff;
+}
+.seat-models{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    font-size: 0.9rem;
+}
+.seat{
+    width: 15px;
+    height: 15px;
+    margin: 0 .2rem;
+    border-radius: 15px 15px 0 0;
+    background-color: #444451;
+    transition: all .3s linear;
+}
+.seat:hover{
+    transform: scale(1.2);
+}
+.seat-selected{
+    background-color: #7fb2ff;
+}
+.seat-occupied{
+    background-color: rgb(230, 218, 203);
+}
+.screen{
+    width: 270px;
+    background-color: #fff;
+    height: 100px;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgb(255 255 255 / 75%)
+}
+.seat-row{
+    display: flex;
+    margin-bottom: .2rem;
+}
+.seat-none{
+    background-color: transparent;
+}

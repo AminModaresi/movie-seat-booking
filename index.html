@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container mx-auto mt-[5rem]">
+        <div class="grid grid-cols-12">
+            <div class="col-span-6 col-start-4 flex items-center justify-center flex-col">
+                <section class="pickMove flex items-center justify-center">
+                    <p class="pickMove__text mr-3">
+                        Pick a movie :
+                    </p>
+                    <select name="" id="selected" class="text-gray-600 px-6 py-2 rounded">
+                        <option value="10">Avengers: Endgame ($10)</option>
+                        <option value="12">Joker ($12)</option>
+                        <option value="8">Toy Story 4 ($8)</option>
+                        <option value="9">The Lion King ($9)</option>
+                    </select>
+                </section>
+                <section class="seat-models items-center inline-flex justify-center mt-10">
+                    <div class="seat-model mx-2 flex items-center">
+                        <div class="seat"></div>
+                        <p class="seat-model__text">N/A</p>
+                    </div>
+                    <div class="seat-model mx-2 flex items-center">
+                        <div class="seat seat-selected"></div>
+                        <p class="seat-model__text">Selected</p>
+                    </div>
+                    <div class="seat-model mx-2 flex items-center">
+                        <div class="seat seat-occupied"></div>
+                        <p class="seat-model__text">Occupied</p>
+                    </div>
+                </section>
+                <div class="screen"></div>
+                <section class="seat-rows"></section>
+                <section class="information mt-5"></section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
